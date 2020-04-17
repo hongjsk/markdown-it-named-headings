@@ -20,8 +20,12 @@ npm install --save markdown-it-named-headings
 ## Usage
 
 ```js
+var options = {
+  unidecode: true // default
+}
+
 var md = require('markdown-it')()
-  .use(require('markdown-it-named-headings'))
+  .use(require('markdown-it-named-headings'), options)
 
 md.render('# hello')
 ```
